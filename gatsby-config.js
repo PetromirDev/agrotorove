@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Агро Торове 77 ООД | Agro Torove 77`,
+    description: `Минерални торове от надежден търговец на добра цена. Минерални торове. Течен тор`,
     author: `@gatsbyjs`,
   },
   plugins: [
