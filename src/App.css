@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap"); */
+*{
+  box-sizing: border-box;
+  margin:0px;
+  font-family: "Roboto", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover{
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*NAVBAR*/
+.navWrapper{
   display: flex;
   flex-direction: column;
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  box-shadow: 0px 0px 3px black;
+
+}
+/*TOP NAV*/
+.topNav{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #2C3B17;/*#91632F*/
+  align-items: center;
+}
+
+.topNav *{
+  font-weight: 300;
+  color:white;
+}
+.phoneWrapper{
+  display: flex;
+  align-items: center;
+}
+.phoneWrapper img{
+  margin-right: 15px;
+  margin-left: 20px;
+}
+/*BOTTOM NAV*/
+.bottomNav{
+  display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.bottomNav h1{
+  color:#2C3B17;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation{
+  display: flex;
+  align-items: center;
+}
+.navItem{
+  margin-right: 53px;
+}
+.navItem:last-child{
+  margin-right: 0px;
+}
+.navItem a{
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.1s linear;
+  font-size: 25px;
+}
+.navItem a:hover{
+  border-bottom: 4px solid #2C3B17;/*#856c00*/
 }

@@ -1,0 +1,40 @@
+.landingBG{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 88.5vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images/landingBG3.jpg');
+    background-size: cover;
+    background-position:center center;
+}
+.welcomeMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcomeMessage h1{
+    font-size: 80px;
+    color:white;
+}
+.welcomeMessage h2{
+    color:rgb(235, 235, 235);
+    font-weight: 400;
+    margin-top: 10px;
+}
+.bottom{
+    width: 120px;
+    height: 3px;
+    background-color: #009714;/*#ff9720*/
+}
+.welcomeMessage button{
+    margin-top: 30px;
+    background-color: #62C068;
+    border:none;
+    color: white;
+    font-size: 30px;
+    padding: 15px 25px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    border-radius: 5px;
+}
