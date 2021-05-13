@@ -1,5 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import "./navbar.css"
 
@@ -8,9 +7,9 @@ const Header = () => (
       <div className="topNav">
         <h4>Използвайте качествена тор!</h4>
         <div className="phoneWrapper">
-          <img alt="email-icon" width="30" height="30"/>
+          <img src="/images/email.png" alt="email-icon" width="30" height="30"/>
           <h4>agrotorove77@abv.bg</h4>
-          <img alt="phone-icon" width="30" height="30"/>
+          <img src="/images/phone.png" alt="phone-icon" width="25" height="30"/>
           <h4>+ 359 887 697 749</h4>
         </div>
       </div>
@@ -20,16 +19,16 @@ const Header = () => (
         </div>
         <div className="navigation">
           <div className="navItem">
-            <a href="/">Начало</a>
+            <Link to="/">Начало</Link>
           </div>
           <div className="navItem">
-            <a href="/torove">Торове</a>
+            <Link to="/torove">Торове</Link>
           </div>          
           <div className="navItem">
-            <a href="/about">За Нас</a>
+            <Link to="/about">За Нас</Link>
           </div>
           <div className="navItem">
-            <a href="/contact-us">Контакти</a>
+            <Link to="/contact-us">Контакти</Link>
           </div>          
         </div>
       </div>
