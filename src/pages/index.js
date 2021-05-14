@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from '../styles/landing.module.css'
-
+import {Link} from 'gatsby'
 const IndexPage = () => (
   <Layout>
     <Seo title="Начало" />
@@ -12,7 +12,10 @@ const IndexPage = () => (
           <h1>МИНЕРАЛНИ ТОРОВЕ</h1>
           <div className={styles.bottom}></div>
           <h2>Кратък лозунг</h2>
-          <button>Прочети повече</button>
+          {/* <button>Прочети повече</button> */}
+          <div>
+            <Link to="/torove">Торове</Link>
+          </div>
       </div>
     </div>
   </Layout>

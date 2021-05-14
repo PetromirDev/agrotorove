@@ -8,9 +8,9 @@ const Header = () => (
         <h4>Използвайте качествена тор!</h4>
         <div className="phoneWrapper">
           <img src="/images/email.png" alt="email-icon" width="30" height="30"/>
-          <h4>agrotorove77@abv.bg</h4>
+          <a href="mailto:agrotorove77@abv.bg">agrotorove77@abv.bg</a>
           <img src="/images/phone.png" alt="phone-icon" width="25" height="30"/>
-          <h4>+ 359 887 697 749</h4>
+          <a href="tel:359 887 697 749">+ 359 887 697 749</a>
         </div>
       </div>
       <div className="bottomNav">
