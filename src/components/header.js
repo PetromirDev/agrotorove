@@ -25,8 +25,11 @@ const Header = () => (
             <Link to="/torove">Торове</Link>
           </div>          
           <div className="navItem">
-            <Link to="/about">За Нас</Link>
-          </div>
+            <Link to="/uan">УАН</Link>
+          </div>     
+          <div className="navItem">
+            <Link to="/listni-torove">Листни торове</Link>
+          </div>     
           <div className="navItem">
             <Link to="/contact-us">Контакти</Link>
           </div>          

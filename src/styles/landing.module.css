@@ -29,9 +29,14 @@
     background-color: #009714;/*#ff9720*/
 }
 .welcomeMessage div:last-child{
-    margin-top: 30px;
+    height: 150px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .welcomeMessage div:last-child a{
+    overflow: auto;
     background-color: #62C068;
     border:none;
     color: white;
