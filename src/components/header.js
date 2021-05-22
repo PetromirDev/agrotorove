@@ -2,32 +2,43 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "./navbar.css"
 
-const Header = () => (
+function Header () {
+  
+  function myFunction () {
+    var x = document.getElementById("links");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  } 
+  return(
 <div className="navWrapper">
       <div className="topNav">
         <h4>Използвайте качествена тор!</h4>
         <div className="phoneWrapper">
-          <img src="/images/email.png" alt="email-icon" width="30" height="30"/>
+          <img src="/images/email.png" alt="email-icon" />
           <a href="mailto:agrotorove77@abv.bg">agrotorove77@abv.bg</a>
-          <img src="/images/phone.png" alt="phone-icon" width="25" height="30"/>
+          <img src="/images/phone.png" alt="phone-icon" />
           <a href="tel:359 887 697 749">+ 359 887 697 749</a>
         </div>
       </div>
       <div className="bottomNav">
         <div className="logoWrapper">
-          <h1>АГРО ТОРОВЕ 77</h1>
+          <h1 style={{cursor:"pointer"}} onClick={() => window.location.href="/"}>АГРО ТОРОВЕ 77</h1>
+          <img src="/images/menu.svg" width="50" onClick={myFunction} alt="bar"/>
         </div>
-        <div className="navigation">
-          <div className="navItem">
+        <div className="navigation" id="links">
+          <div className="navItem" >
             <Link to="/">Начало</Link>
           </div>
-          <div className="navItem">
-            <Link to="/torove">Торове</Link>
+          <div className="navItem" >
+            <Link to="/torove" >Торове</Link>
           </div>          
-          <div className="navItem">
+          <div className="navItem" >
             <Link to="/uan">УАН</Link>
           </div>     
-          <div className="navItem">
+          <div className="navItem" >
             <Link to="/listni-torove">Листни торове</Link>
           </div>     
           <div className="navItem">
@@ -35,6 +46,6 @@ const Header = () => (
           </div>          
         </div>
       </div>
-    </div>
-)
+    </div>)
+}
 export default Header

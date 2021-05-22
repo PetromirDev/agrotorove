@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    text-align: center;
 }
 .header h1{
     color:white;
@@ -65,4 +66,20 @@
 .tor img{
     width: 280px;
     cursor: pointer;
+}
+@media (max-width: 950px){
+    .toroveRow{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .tor{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
 }
