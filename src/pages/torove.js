@@ -6,9 +6,10 @@ import Seo from '../components/seo'
 export default function torove() {
     return (
         <Layout>
-            <Seo title="Торове"/>
+            
             <div className={styles.containerWrapperT}>
-                <div className={styles.header}><h1>Минерални торове</h1></div>
+            <Seo title="Торове"/>
+                <div className={styles.header1}><h1>Минерални торове</h1></div>
                 <div className={styles.containerT}>
                     <div className={styles.torove}>
                         <div className={styles.toroveRow}>

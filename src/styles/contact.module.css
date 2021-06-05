@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
-    height: 100vh;
+    justify-content: center;
+    padding: 60px 60px 300px 60px ;
+    background-image: url("/images/tractor-spraying.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 .contactWrapper{
     display: flex;
@@ -19,6 +22,8 @@
     border-radius: 5px;
     margin-left: 40px;
     margin-right: 40px;
+    background-color: white;
+
 }
 .contactForm{
     display: flex;
@@ -87,4 +92,15 @@
 .sideInfo{
     border-left: 3px solid rgb(0, 0, 0);
     padding: 10px 20px;
+}
+@media (max-width: 400px){
+    .container{
+        padding: 50px 10px 200px 10px;
+    }
+    .contactWrapper{
+        height: 520px;
+    }
+    form h2{
+        font-size: 25px;
+    }
 }

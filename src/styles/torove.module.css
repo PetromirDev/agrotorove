@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #cfcfcff1;
 }
-.header{
+.header1{
     width: 100%;
     position:relative;
     display: flex;
@@ -19,7 +19,7 @@
     background-size: cover;
     text-align: center;
 }
-.header h1{
+.header1 h1{
     color:white;
     font-size: 50px;
     margin-top: 70px;
@@ -74,6 +74,7 @@
         margin-top: 0px;
         justify-content: center;
         text-align: center;
+        width: 100%;
     }
     .tor{
         justify-content: center;
@@ -81,5 +82,7 @@
         text-align: center;
         margin-right: 0px;
         margin-top: 10px;
+        width: 100%;
     }
+
 }

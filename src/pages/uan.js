@@ -15,7 +15,7 @@ export default function Uan() {
     return (
         <Layout>     
             <Seo title="УАН"/>
-            <div className={styles.container}>           
+            <div>           
                     <div className={styles.welcomeWrapper}>
                         <h1>УАН – УСПЕШНИЯТ ИЗБОР ЗА ПРОФЕСИОНАЛИСТИ</h1>
                         <p>В света вече над 40% от употребяваните азотни торове са течни.<br/>
@@ -33,7 +33,7 @@ export default function Uan() {
                     <div className={styles.infoWrapper}>
                         <h2 ref={info}>Физико – химични характеристики на UAN</h2>
                         <div className={styles.sideToSide}>
-                            <table class="styled-table">
+                            <table className="styled-table">
                                 <thead>
                                     <tr>
                                         <th>Съдържание на N в %</th>
@@ -98,7 +98,7 @@ export default function Uan() {
                             При внасяне на "Течен азотен тор 32" върху много суха почва или при температура на въздуха по-висока от 15-18 °С е препоръчително торът  да се инкорпорира чрез подходяща обработка на почвата, за да се избегнат макар и малките загуби на азот. На почва с добра и средна влагозапасеност не е е необходимо инкорпориране, поради това, че внесеният течен тор попива в почвените частици и загубите на азот се избягват. Не е необходимо инкорпориране, ако непосредствено след внасянето на тора площа се полее.
                             Проведените полски торови опити, както и разработените технологии за азотно торене позволяват диференциране на нормите за торене с Течен азотен Тор. Тези норми са посочени в приложение 3. Следва обаче да се има предвид, че оптималните норми се определят след извършен почвен анализ
                             </p>
-                            <img style={{maxWidth:400}} src="/images/tractor.png" className={styles.rightElement} alt="tractor"/>
+                            <img id={styles.tractor} style={{maxWidth:400}} src="/images/tractor.png" className={styles.rightElement} alt="tractor"/>
                         </div>
                     </div>
                     <div className={styles.technicalsWrapper} ref={soil}>

@@ -71,3 +71,15 @@ footer p{
   font-weight: bold;
   color: #009879;
 }
+@media (max-width: 400px){
+  .styled-table{
+    font-size: 12px;
+    min-width: 100px;
+  }
+
+}
+@media (max-width: 300px){
+  .styled-table{
+    display: none;
+  }
+}

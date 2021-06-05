@@ -3,12 +3,13 @@ import { Link } from "gatsby"
 import "./navbar.css"
 
 function Header () {
+  // const[visible, setVisible] = React.useState(true)
   
   function myFunction () {
     var x = document.getElementById("links");
     if (x.style.display === "flex") {
       x.style.display = "none";
-    } else {
+    } else if(x.style.display = "none"){
       x.style.display = "flex";
     }
   } 
@@ -18,7 +19,7 @@ function Header () {
         <h4>Използвайте качествена тор!</h4>
         <div className="phoneWrapper">
           <img src="/images/email.png" alt="email-icon" />
-          <a href="mailto:agrotorove77@abv.bg">agrotorove77@abv.bg</a>
+          <a href="mailto:agrotorove77@abv.bg">agrotorove@abv.bg</a>
           <img src="/images/phone.png" alt="phone-icon" />
           <a href="tel:359 887 697 749">+ 359 887 697 749</a>
         </div>
@@ -43,8 +44,9 @@ function Header () {
           </div>     
           <div className="navItem">
             <Link to="/contact-us">Контакти</Link>
-          </div>          
-        </div>
+          </div>      
+        </div> 
+
       </div>
     </div>)
 }

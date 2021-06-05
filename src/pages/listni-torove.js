@@ -5,7 +5,7 @@ import * as styles from '../styles/listni.module.css'
 export default function listniТorove() {
     return (
         <Layout>
-            <div className={styles.container}>
+            <div >
                 <div className={styles.welcomeWrapper}>
                     <h1>Предимства на листното торене</h1>
                     <p>Листното подхранване е част от оптималната схема на торене, с което се постига по-пълноценно хранене на растенията.
