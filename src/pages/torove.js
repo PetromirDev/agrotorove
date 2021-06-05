@@ -18,8 +18,8 @@ export default function torove() {
                                 <img alt="karbamid" src="https://cdn4.amcn.in/a/zemedelie.alle.bg/assets/be74d0afa744-w200-c999999999-v9c36318a4b/a0d9zbysv9.jpg"/>
                             </div>
                             <div className={styles.tor}>
-                                <h2>NPK 15:15:15</h2>
-                                <img alt="npk" src="https://cdn4.amcn.in/a/zemedelie.alle.bg/assets/7ff0ab8c60fe-w200-c999999999-vaf20ceea85/j8w5u1z4rp.jpg"/>
+                                <h2>Амониев Нитрат</h2>
+                                <img alt="AN" src="/images/an.png"/>
                             </div>
                             <div className={styles.tor}>
                                 <h2>Моноамониев фосфат</h2>
@@ -46,9 +46,10 @@ export default function torove() {
                                 <img alt="NP" src="http://www.fertbul.com/uploads/2018/02/1cbca60306a602b308be29f87f604a25.png"/>
                             </div>
                             <div className={styles.tor}>
-                                <h2>Амониев Нитрат</h2>
-                                <img alt="AN" src="/images/an.png"/>
+                                <h2>NPK 15:15:15</h2>
+                                <img alt="npk" src="https://cdn4.amcn.in/a/zemedelie.alle.bg/assets/7ff0ab8c60fe-w200-c999999999-vaf20ceea85/j8w5u1z4rp.jpg"/>
                             </div>
+
                         </div>
                     </div>
                 </div>
