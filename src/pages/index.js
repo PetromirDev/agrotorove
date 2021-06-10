@@ -11,7 +11,7 @@ const IndexPage = () => (
       <div className={styles.welcomeMessage}>            
           <h1>МИНЕРАЛНИ ТОРОВЕ</h1>
           <div className={styles.bottom}></div>
-          <h2>Кратък лозунг</h2>
+          <h2>Азотни, фосфорни, комбинирани и листни торове</h2>
           {/* <button>Прочети повече</button> */}
           <div>
             <Link to="/torove">Торове</Link>
