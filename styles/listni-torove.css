@@ -1,0 +1,84 @@
+.welcomeWrapper{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/corn-listni.jpg");
+    background-size: cover;
+    background-position:  center center;
+    height: 87.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 20vh;
+}
+.welcomeWrapper h1{
+    font-size: 80px;
+    padding-bottom: 50px;
+    color:white;
+    text-transform: uppercase;
+
+}
+.welcomeWrapper p{
+    font-size: 30px;
+    color: rgb(221, 221, 221);/*rgb(46, 46, 46)*/
+    max-width: 1300px;
+    text-align: center;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+    padding: 80px 10px;
+}
+.textContainer p{
+    text-align: left;
+    margin-top: 80px;
+    max-width: 1300px;
+}
+.fullImage{
+
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/tractor-spraying.jpg");
+    background-size: cover;
+    background-position:  center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fullImage h1{
+    font-size: 80px;
+    color:white;
+    text-transform: uppercase;
+}
+.fullImage p{
+    font-size: 30px;
+    color: rgb(221, 221, 221);/*rgb(46, 46, 46)*/
+    max-width: 1300px;
+    text-align: center;
+}
+@media (max-width: 730px){
+    .welcomeWrapper{
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcomeWrapper h1{
+        padding-bottom: 20px;
+        font-size: 50px;
+    }
+    .welcomeWrapper p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px){
+    .fullImage h1{
+        font-size: 50px;
+    }
+    .fullImage p{
+        font-size: 20px;
+    }
+}
