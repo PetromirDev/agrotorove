@@ -121,3 +121,17 @@
 .contactForm button:hover{
     cursor: pointer;
 }
+@media (max-width: 680px){
+    .data{
+        flex-direction: column;
+    }
+    .data input:last-child{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 450px){
+    .contact{
+        padding: 50px 20px;
+    }
+}
