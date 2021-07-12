@@ -60,3 +60,64 @@
         background-position:center center;
     }
 }
+.contactWrapper{
+    display: flex;
+    padding: 120px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+}
+.contact h2{
+    margin-bottom: 30px;
+    text-transform: uppercase
+}
+.data{
+    display: flex;
+    margin-bottom: 10px;
+}
+.data input{
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    padding: 5px 2px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.data input:focus{
+    outline: none;
+}
+.data input:last-child{
+    margin-left: 40px;
+}
+.contactForm textarea{
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    padding: 5px 2px;
+    font-weight: 400;
+    font-size: 20px;
+    resize: none;
+}
+.contactForm textarea:focus{
+    outline: none;
+}
+.contactForm button{
+    border-radius: 50px;
+    font-size: 20px;
+    border:0px;
+    background-color: green;
+    color:white;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+.contactForm button:hover{
+    cursor: pointer;
+}
