@@ -5,7 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     overflow: hidden;
-    font-family: "Opens Sans", sans-serif!important;
+    font-family: "Opens Sans", sans-serif;
 }
 html{
   overflow-y: auto;
