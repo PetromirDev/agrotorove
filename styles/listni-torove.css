@@ -14,8 +14,15 @@
     text-align: center;
     /* padding-top: 20vh; */
 }
+p{
+    line-height: 1.5em;
+}
+h1{
+    font-size: 60px;
+    padding: 0px 20px;
+}
 .welcomeWrapper h1{
-    font-size: 80px;
+    /* font-size: 80px; */
     /* padding-bottom: 50px; */
     color:white;
     text-transform: uppercase;
@@ -55,9 +62,10 @@
     text-align: center;
 }
 .fullImage h1{
-    font-size: 80px;
+    /* font-size: 80px; */
     color:white;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 .fullImage p{
     font-size: 30px;
