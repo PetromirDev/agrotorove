@@ -17,9 +17,10 @@
     /* padding-top: 20vh; */
 }
 p{
-    line-height: 1.8em;
+    line-height:calc(25px + .4vw);
     font-size: 20px;
 }
+
 h1{
     font-size: calc(32px + 1.5vw)!important;
     padding: 0px 20px;
@@ -34,7 +35,6 @@ h1{
 
 }
 .welcomeWrapper p{
-    font-size: 30px;
     color: rgb(221, 221, 221);/*rgb(46, 46, 46)*/
     /* max-width: 1300px; */
     padding: 0 20px;
@@ -51,7 +51,7 @@ h1{
     padding: 80px 20px;
 }
 .textContainer p{
-    text-align: left;
+    text-align: justify;
     /* margin-top: 80px; */
     max-width: 1300px;
 }
@@ -74,13 +74,17 @@ h1{
     /* margin-bottom: 50px; */
 }
 .fullImage p{
-    font-size: 30px;
+
     color: rgb(221, 221, 221);/*rgb(46, 46, 46)*/
     max-width: 1300px;
     text-align: center;
     padding: 0 20px;
+    font-size: 30px;
 }
 @media (max-width: 730px){
+    .fullImage p{
+        font-size: 20px;
+    }
     .welcomeWrapper{
         padding-top: 50px;
         justify-content: center;
@@ -90,15 +94,14 @@ h1{
         /* padding-bottom: 20px; */
         font-size: 50px;
     }
-    .welcomeWrapper p{
-        font-size: 20px;
+    .textContainer{
+        padding: 50px 10px;
     }
+
 }
 @media (max-width: 360px){
     .fullImage h1{
         font-size: 50px;
     }
-    .fullImage p{
-        font-size: 20px;
-    }
+
 }

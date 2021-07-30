@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
 *{
     font-family: "Open Sans", sans-serif!important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 /*STYLED TABLE*/
 .styled-table {
@@ -48,7 +51,7 @@
   }
   /*UAN*/
   .welcomeWrapper{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/images/uan-bg.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/uan-bg.jpg");
     background-size: cover;
     background-position:  center center;
     height: 87.2vh;
@@ -61,6 +64,7 @@
 }
 .welcomeWrapper h1{
     font-size: 70px;
+    max-width: 1000px;
     color:white;
 }
 .welcomeWrapper p{
@@ -94,7 +98,7 @@
         font-size: 50px;
     }
     .welcomeWrapper p {
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 20px;
     }
     .navigation button{
@@ -209,11 +213,14 @@
     }
 }
 @media (max-width: 1000px){
-    .technicals h3{
-        padding: 10px;
-    }
     p{
+        line-height: 25px;
+    }
+    /* p{
         padding:10px;
+    } */
+    .bigInfo{
+        padding: 0px 10px;
     }
 }
 @media (max-width: 524px){
@@ -221,11 +228,11 @@
         font-size: 30px;
     }
     .welcomeWrapper p{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 @media (max-width: 470px){
-    h2{
+    /* h2{
         font-size: 18px;
     }
     h3{
@@ -239,9 +246,16 @@
     }
     p{
         font-size: 12px;
-    }
+    } */
     .technicals{
-        padding: 0px 5px;
+        padding: 0px 0px;
+    }
+    .rightElement{
+        padding: 0px 10px;
+    }
+    .technicalsWrapper{
+        padding: 0 10px;
+        padding-top: 80px;
     }
     .sideToSide{
         margin-top: 10px;

@@ -59,8 +59,7 @@ footer p{
   height: 70px;
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 20px;
   background-color: #2C3B17;/*#91632F*/
   align-items: center;
 }
@@ -130,8 +129,7 @@ footer p{
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 20px;
   z-index: 200;
   position: relative;
 }
