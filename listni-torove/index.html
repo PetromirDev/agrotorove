@@ -4,12 +4,14 @@
         <title>Листни Торове | Агро Торове 77 ООД </title>
         <link rel="stylesheet" href="../styles/listni-torove.css"/>
         <link rel="stylesheet" href="../navbar.css"/>
-        <meta name="description" content="Минерални торове. Агро Торове 77 ООД предлага азотни, фосфорни, листни и комбинирани торове. Високо качество. Официален дистрибутор на Agropolychim">
+        <meta name="description" content="Листни торове. Агро Торове 77 ООД предлага азотни, фосфорни, листни и комбинирани торове. Високо качество. Официален дистрибутор на Agropolychim">
         <meta name=”robots” content=”index, follow”>
         <meta name="author" content="Petromir Petrov"/>
         <meta name="keywords" content="тор, листен тор, листни торове, течен тор"/>
         <meta name="viewport" content="width=device-width, inital-scale=1" >
         <link rel="icon" type="image/png" href="../logo.png">
+        <link href='https://css.gg/close.css' rel='stylesheet'>
+        <link href='https://css.gg/menu-right-alt.css' rel='stylesheet'>    
     </head>
     <body>
         <nav class="navWrapper">
@@ -25,9 +27,11 @@
             <div class="bottomNav">
               <div class="logoWrapper">
                 <a href="/">АГРО ТОРОВЕ 77</a>
-                <img src="../images/menu.svg" width="50" height="50" onClick="myFunction()" alt="bar"/>
+                <i class="gg-menu-right-alt" id="menu" onClick="myFunction()"></i>
+                
               </div>
-              <div id="links">
+              <div class="mobile" id="links">
+                <i class="gg-close" id="cross" onclick="myFunction()"></i>
                 <div class="navItem" >
                   <a href="/">Начало</a>
                 </div>
@@ -46,6 +50,7 @@
               </div> 
       
             </div>
+            <div class="bg" id="bg"></div>
         </nav>
         <div >
             <div class="welcomeWrapper">
@@ -87,11 +92,20 @@
     </body>
     <script>
         function myFunction () {
+            // var x = document.getElementById("links");
+            // if (x.style.display === "flex") {
+            // x.style.display = "none";
+            // } else if(x.style.display = "none"){
+            // x.style.display = "flex";
+            // }
             var x = document.getElementById("links");
-            if (x.style.display === "flex") {
-            x.style.display = "none";
-            } else if(x.style.display = "none"){
-            x.style.display = "flex";
+            var y = document.getElementById("bg")
+            if (x.className === "mobile") {
+              x.className += " active";
+              y.style.display = "block";
+            } else {
+              x.className = "mobile";
+              y.style.display = "none";
             }
         } 
     </script>

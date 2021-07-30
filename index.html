@@ -11,46 +11,47 @@
         <meta name="viewport" content="width=device-width, inital-scale=1" >
         <link rel="icon" type="image/png" href="logo.png">
         <link href='https://css.gg/close.css' rel='stylesheet'>
-    </head>
+        <link href='https://css.gg/menu-right-alt.css' rel='stylesheet'>   
+     </head>
     <body>
-        <nav class="navWrapper">
-            <div class="topNav">
-              <h4>Използвайте качествена тор!</h4>
-              <div class="phoneWrapper">
-                <img src="images/email.png" alt="email-icon" />
-                <a href="mailto:agrotorove77@abv.bg">agrotorove@abv.bg</a>
-                <img src="images/phone.png" alt="phone-icon" />
-                <a href="tel:359 887 697 749">+ 359 887 697 749</a>
-              </div>
+      <nav class="navWrapper">
+        <div class="topNav">
+          <h4>Използвайте качествена тор!</h4>
+          <div class="phoneWrapper">
+            <img src="../images/email.png" alt="email-icon" />
+            <a href="mailto:agrotorove77@abv.bg">agrotorove@abv.bg</a>
+            <img src="../images/phone.png" alt="phone-icon" />
+            <a href="tel:359 887 697 749">+ 359 887 697 749</a>
+          </div>
+        </div>
+        <div class="bottomNav">
+          <div class="logoWrapper">
+            <a href="/">АГРО ТОРОВЕ 77</a>
+            <i class="gg-menu-right-alt" id="menu" onClick="myFunction()"></i>
+            
+          </div>
+          <div class="mobile" id="links">
+            <i class="gg-close" id="cross" onclick="myFunction()"></i>
+            <div class="navItem" >
+              <a href="/">Начало</a>
             </div>
-            <div class="bottomNav">
-              <div class="logoWrapper">
-                <a href="/">АГРО ТОРОВЕ 77</a>
-                <img src="images/menu.svg" width="50" height="50" onClick="myFunction()" alt="bar"/>
-              </div>
-              
-              <div class="navigation" id="links">
-                <img src="images/cross.svg" id="cross"/>
-                <div class="navItem" >
-                  <a href="/">Начало</a>
-                </div>
-                <div class="navItem" >
-                  <a href="/torove" >Торове</a>
-                </div>          
-                <div class="navItem" >
-                  <a href="/uan">УАН</a>
-                </div>     
-                <div class="navItem" >
-                  <a href="/listni-torove">Листни торове</a>
-                </div>     
-                <!-- <div class="navItem">
-                  <a href="/contact">Контакти</a>
-                </div>       -->
-              </div> 
-      
-            </div>
-            <div class="bg" id="bg"></div>
-        </nav>
+            <div class="navItem" >
+              <a href="/torove" >Торове</a>
+            </div>          
+            <div class="navItem" >
+              <a href="/uan">УАН</a>
+            </div>     
+            <div class="navItem" >
+              <a href="/listni-torove">Листни торове</a>
+            </div>     
+            <!-- <div class="navItem">
+              <a href="/contact">Контакти</a>
+            </div>       -->
+          </div> 
+  
+        </div>
+        <div class="bg" id="bg"></div>
+      </nav>
         <div class="landingBG">
           <div class="welcomeMessage">            
               <h1>МИНЕРАЛНИ ТОРОВЕ</h1>
@@ -79,7 +80,7 @@
 
           </div> -->
           <div class="bottomFooter">
-            <p>Copyright © 2021 agrotorove.com | Made by Petromir Petrov</p>
+            <p>Copyright © 2021 agrotorove.com | <a href="https://petromir.me" style="color: rgb(0, 173, 0)">Направен от Петромир Петров</a></p>
           </div>
         </footer>
     </body>
@@ -87,12 +88,12 @@
         function myFunction () {
             var x = document.getElementById("links");
             var y = document.getElementById("bg")
-            if (x.style.display === "flex") {
-            x.style.display = "none";
-            y.style.display = "none";
-            } else if(x.style.display = "none"){
-            x.style.display = "flex";
-            y.style.display ="block";
+            if (x.className === "mobile") {
+              x.className += " active";
+              y.style.display = "block";
+            } else {
+              x.className = "mobile";
+              y.style.display = "none";
             }
         } 
     </script>
