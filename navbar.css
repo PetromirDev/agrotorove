@@ -72,6 +72,10 @@ footer p{
   display: flex;
   align-items: center;
 }
+.phoneWrapper a{
+  letter-spacing: 2px;
+  font-weight: 300;
+}
 .phoneWrapper img{
   margin-right: 15px;
   margin-left: 20px;
