@@ -7,10 +7,24 @@
     overflow: hidden;
     font-family: "Opens Sans", sans-serif;
 }
+::selection{
+  background-color: green!important;
+}
 html{
   overflow-y: auto;
 }
+.js-scroll {
+  opacity: 0!important;
+  transition: opacity 1s!important;
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+}
 
+.js-scroll.scrolled {
+  opacity: 1!important;
+}
 /* ::selection{
   background-color: green;
 } */

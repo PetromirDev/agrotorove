@@ -77,6 +77,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 730px;
     padding: 80px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -129,6 +131,9 @@
     cursor: pointer;
 }
 @media (max-width: 680px){
+    .contact{
+        width: auto;
+    }
     .data{
         flex-direction: column;
     }
@@ -140,5 +145,7 @@
 @media (max-width: 450px){
     .contact{
         padding: 50px 20px;
+        width: 100%;
+        margin: 0 10px;
     }
 }
