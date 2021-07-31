@@ -87,7 +87,8 @@ footer p{
   align-items: center;
 }
 .phoneWrapper a{
-  letter-spacing: 2px;
+  font-size: 14px!important;
+  letter-spacing: 1px;
   font-weight: 300;
 }
 .phoneWrapper img{
