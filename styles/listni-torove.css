@@ -5,7 +5,7 @@
     padding: 0;
 }
 .welcomeWrapper{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/corn-listni.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/трактор-листни-торове1.jpg");
     background-size: cover;
     background-position:  center center;
     height: 87.2vh;
@@ -15,6 +15,12 @@
     justify-content: center;
     text-align: center;
     /* padding-top: 20vh; */
+}
+@media (max-width: 600px){
+    .welcomeWrapper{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/трактор-листни-торове2.jpg");
+
+    }
 }
 p{
     line-height:calc(25px + .4vw);
@@ -56,8 +62,7 @@ h1{
     max-width: 1300px;
 }
 .fullImage{
-
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/tractor-spraying.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/tractor-spraying.jpg");
     background-size: cover;
     background-position:  center center;
     height: 100vh;
@@ -66,6 +71,12 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+@media (max-width: 600px){
+    .fullImage{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/tractor-spraying2.jpg");
+
+    }
 }
 .fullImage h1{
     /* font-size: 80px; */

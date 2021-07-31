@@ -6,6 +6,42 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+p{
+    font-size: 20px;
+}
+
+li{
+    font-size: 20px;
+}
+h2{
+    font-size: calc(25px + 1vw);
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: calc(20px +1vw);
+}
+#info{
+    margin-bottom: 60px;
+}
+@media(max-width:600px){
+    p{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    li{
+        font-size: 16px;
+    }
+}
 /*STYLED TABLE*/
 .styled-table {
     border-collapse: collapse;
@@ -52,7 +88,7 @@
   }
   /*UAN*/
   .welcomeWrapper{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/uan-bg.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/течен-тор-уан-бг.jpg");
     background-size: cover;
     background-position:  center center;
     height: 87.2vh;
@@ -62,6 +98,12 @@
     justify-content: flex-start;
     text-align: center;
     padding-top: 20vh;
+}
+@media (max-width: 600px){
+    .welcomeWrapper{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/течен-тор-уан-бг2.jpg");
+
+    }
 }
 .welcomeWrapper h1{
     font-size: 70px;
@@ -111,6 +153,7 @@
         display: none;
     } */
 }
+
 /*INFO WRAPPER*/
 .infoWrapper{
     display: flex;
@@ -127,7 +170,6 @@
 .sideToSide{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
     margin-bottom: 50px;
     align-items: center;
 }
@@ -148,12 +190,11 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 0px 20px;
-    padding-bottom: 50px;
-    margin-top: 80px;
+    padding: 60px 20px;
 }
 .bigInfo p{
-    max-width: 620px;
+    margin-top: 60px;
+    max-width: 100%;
     text-align: justify;
 }
 @media (max-width: 1005px){
@@ -221,7 +262,7 @@
         padding:10px;
     } */
     .bigInfo{
-        padding: 0px 10px;
+        padding: 60px 10px;
     }
 }
 @media (max-width: 524px){
@@ -255,11 +296,12 @@
         padding: 0px 10px;
     }
     .technicalsWrapper{
-        padding: 0 10px;
-        padding-top: 80px;
+        padding: 60px 10px;
+        padding-top: 60px;
     }
     .sideToSide{
         margin-top: 10px;
+        margin-bottom: 0px;
     }
     .sideToSide img{
         max-width: 100px;
