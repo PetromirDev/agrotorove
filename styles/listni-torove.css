@@ -23,7 +23,8 @@
     }
 }
 p{
-    line-height:calc(25px + .4vw);
+    /* line-height:calc(25px + .4vw); */
+    line-height: 130%;
     font-size: 20px;
 }
 
@@ -55,6 +56,9 @@ h1{
     /* padding-top: 80px;
     padding-bottom: 80px; */
     padding: 80px 20px;
+}
+.textContainer h1{
+    font-weight: 300;
 }
 .textContainer p{
     text-align: justify;

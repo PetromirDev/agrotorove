@@ -15,6 +15,7 @@ li{
 }
 h2{
     font-size: calc(25px + 1vw);
+    font-weight: 300;
 }
 h3{
     font-size: 22px;
@@ -24,6 +25,9 @@ h4{
 }
 #info{
     margin-bottom: 60px;
+}
+p{
+    line-height: 130%;
 }
 @media(max-width:600px){
     p{
@@ -255,9 +259,6 @@ h4{
     }
 }
 @media (max-width: 1000px){
-    p{
-        line-height: 25px;
-    }
     /* p{
         padding:10px;
     } */
